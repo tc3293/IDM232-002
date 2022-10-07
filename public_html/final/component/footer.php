@@ -1,3 +1,3 @@
-<script src= "/public_html/final/script/main.js"></script>
+<script src= "/public_html/final/dist/script/main.js"></script>
 </body>
 </html>
