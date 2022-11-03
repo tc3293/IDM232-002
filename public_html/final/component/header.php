@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDM 232 final project</title>
-    <link rel="stylesheet" href="../dist/css/style.css"> 
-    <link rel="shortcut icon" type="image/png" href="/public_html/final/images/jicon.png">
-    
+  <!--  <link rel="stylesheet" href="../dist/css/style.css"> 
+    <link rel="shortcut icon" type="image/png" href="/public_html/final/images/jicon.png">    --->
+    <link rel="stylesheet" href="../dist/css/style.css">
+
      <!--This is fontawesome.com script for font-->
      <script src="https://kit.fontawesome.com/cba48a6fd7.js" crossorigin="anonymous"></script>
 </head>
