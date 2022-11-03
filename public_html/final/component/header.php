@@ -7,7 +7,7 @@
     <title>IDM 232 final project</title>
   <!--  <link rel="stylesheet" href="../dist/css/style.css"> 
     <link rel="shortcut icon" type="image/png" href="/public_html/final/images/jicon.png">    --->
-    <link rel="stylesheet" href="../dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 
 
 
