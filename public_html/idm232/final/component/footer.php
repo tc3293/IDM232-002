@@ -1,4 +1,4 @@
-<script src= "/public_html/final/dist/script/main.js"></script>
+<script src= "/public_html/idm232/final/dist/script/main.js"></script>
 
 
 <!----------------Below here is FOOTER AND SCRIPT BUTTON FOR MOBILE -------------------->
