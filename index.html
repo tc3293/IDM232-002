@@ -1,11 +1,46 @@
-<?php include_once 'component/header.php'; ?>
-<!----------------Below here is RECIPE  -------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM 232 final project</title>
+    <link rel="stylesheet" href="/public_html/final/dist/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/public_html/final/dist/images/jicon.png">
+     <!--This is fontawesome.com script for font-->
+     <script src="https://kit.fontawesome.com/cba48a6fd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!----------------Below here is MENU HEADER -------------------->
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="/public_html/final/index.php">
+            <img src= "/public_html/final/dist/images/J.png" class="logo">
+            </a>
+            <ul id= "sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="#">Login In</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+
+<!----------------Below here is RECIPE -------------------->
+
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <h1 class="sub-title">Dorayaki</h1>
-                <img src="../dist/images/dorayaki.png">
+                <img src="/public_html/final/dist/images/dorayaki.png">
             </div>
             <div class="about-col-2">
             <h2>Ingredients</h2>
@@ -47,8 +82,40 @@
     </div>
 </div>
 
+<!----------------Below here is FOOTER AND SCRIPT BUTTON FOR MOBILE -------------------->
+<footer class="foot">
+    <p>@2022 by Jun Chen</p>
+</footer>
 
-<?php include_once 'component/footer.php'; ?>
-
-
-
+    <!--MOBILE MENU CLICKING BUTTON-->
+    <script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQO-4A2gQ4hSLZE_7LBmmXXEdmX0muqojwirEhf_fKPXZrliPojR05uKOVrSzAgjpYPg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your message has been delivered!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <br>
+    </body>
+    </html>
