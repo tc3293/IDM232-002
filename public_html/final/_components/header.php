@@ -24,7 +24,7 @@
     <div class="container">
         <nav>
             <a href="index.php">
-            <img src= "https://i.imgur.com/rMtn1MI.png" class="logo">
+            <img src= "dist/images/J.png" class="logo">
             </a>
             <ul id= "sidemenu">
                 <li><a href="#">Home</a></li>

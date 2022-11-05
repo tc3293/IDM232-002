@@ -9,7 +9,7 @@ include_once __DIR__ . '/_components/header.php';
         <div class="row">
             <div class="about-col-1">
                 <h1 class="sub-title">Dorayaki</h1>
-                <img src= "https://i.imgur.com/RkPT7wJ.png" class="dora">
+                <img src= "dist/images/dorayaki.png" class="dora">
             </div>
             <div class="about-col-2">
             <h2>Ingredients</h2>
