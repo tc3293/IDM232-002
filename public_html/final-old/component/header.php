@@ -28,7 +28,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Category</a></li>
                 <li><a href="#">Recipe</a></li>
-                <li><a href="#">Login In</a></li>
+                <li><a href="#">Log In</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>

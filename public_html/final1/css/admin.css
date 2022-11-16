@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+
+}
+.text-center{
+    text-align: right;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width:100%;
+}
+.tbl-10 {
+    width: 30%;
+}
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+}
+
+.btn-primary{
+    background-color: black;
+    color:white;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: rgb(59, 59, 57);
+}
+.btn-edit{
+    background-color: rgb(41, 173, 41);
+    color:white;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-edit:hover{
+    background-color: rgb(56, 141, 56);
+}
+.btn-delete{
+    background-color: rgb(199, 55, 51);
+    color:white;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-delete:hover{
+    background-color: rgb(143, 65, 65);
+}
+
+/* CSS for color success text and error*/
+.win {
+    color: rgb(32, 146, 32);
+}
+
+.error {
+    color: rgb(196, 42, 42);
+}
+
+/* CSS for header*/
+.menu {
+    border-bottom: 1px solid black;
+}
+.menu ul{
+    list-style-type:none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+.menu ul li a:hover{
+    color: rgb(58, 55, 55);
+}
+
+/*CSS FOR MIDDLE CONTENT*/
+.main-content {
+    
+}
+
+/*css for footer*/
+.footer{
+    color: black;
+    text-align: center;
+}
