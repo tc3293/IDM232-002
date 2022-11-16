@@ -1,7 +1,7 @@
 <?php
-include_once __DIR__ . '/app.php';
+include_once __DIR__ . '/../app.php';
 $page_title = 'Home';
-include_once __DIR__ . '/_components/header.php';
+include_once __DIR__ . '/../_components/header.php';
 ?>
 
 <div id="about">
@@ -9,7 +9,7 @@ include_once __DIR__ . '/_components/header.php';
         <div class="row">
             <div class="about-col-1">
                 <h1 class="sub-title">Dorayaki</h1>
-                <img src= "dist/images/dorayaki.png" class="dora">
+                <img src= "../dist/images/dorayaki.png" class="dora">
             </div>
             <div class="about-col-2">
             <h2>Ingredients</h2>
@@ -57,5 +57,5 @@ include_once __DIR__ . '/_components/header.php';
 
 
 
-<?php include_once __DIR__ . '/_components/footer.php';
+<?php include_once __DIR__ . '/../_components/footer.php';
 ?>

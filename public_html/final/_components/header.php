@@ -8,7 +8,7 @@
     <title>IDM 232 final project</title>
   <!--  <link rel="stylesheet" href="../dist/css/style.css"> 
     <link rel="shortcut icon" type="image/png" href="/public_html/final/images/jicon.png">    --->
-    <link rel="stylesheet" href="dist/styles/style.css">
+    <link rel="stylesheet" href="../dist/styles/style.css">
 
 
 
@@ -24,7 +24,7 @@
     <div class="container">
         <nav>
             <a href="index.php">
-            <img src= "dist/images/J.png" class="logo">
+            <img src= "../dist/images/J.png" class="logo">
             </a>
             <ul id= "sidemenu">
                 <li><a href="#">Home</a></li>
