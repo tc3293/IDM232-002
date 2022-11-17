@@ -1,20 +1,20 @@
 <?php include('component-user/header.php')?>
 
 
-    <!-- fOOD sEARCH Section Starts Here -->
+    <!--Search Starts Here -->
     <section class="food-search text-center">
         <div class="container">
             
-            <form action="food-search.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
+            <form action="food-search.php" method="POST">
+                <input type="search" name="search" placeholder="Search for Recipe" required>
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
 
         </div>
     </section>
-    <!-- fOOD sEARCH Section Ends Here -->
+    <!-- Search Ends Here -->
 
-    <!-- CAtegories Section Starts Here -->
+    <!-- Category Starts Here -->
       <!-- <section class="categories">
         <div class="container">
             <h2 class="text-center">Explore Recipe</h2>
@@ -46,9 +46,9 @@
             <div class="clearfix"></div>
         </div>
     </section> 
-   ---- Categories Section Ends Here -->
+   ---- Category Section Ends Here -->
 
-    <!--Menu Section Starts Here -->
+    <!--MenuStarts Here -->
     <section class="food-menu">
         <div class="container">
             <h2 class="text-center">Recipe Menu</h2>
@@ -160,7 +160,7 @@
             <a href="#">See All Foods</a>
         </p>
     </section>
-    <!--  Menu Section Ends Here -->
+    <!--  Menu  Ends Here -->
 
 
 <?php include('component-user/footer.php')?>

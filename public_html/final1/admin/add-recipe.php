@@ -28,10 +28,12 @@
                     </td>
                 </tr>
 
+
+
                 <tr>
-                    <td>Description:</td>
+                    <td>Ingredient/Instruction:</td>
                     <td>
-                        <textarea name="description" cols="30" rows="10" placeholder="Description of the Recipe."></textarea>
+                        <textarea name="description" cols="100" rows="10" placeholder="Description of the Recipe."></textarea>
                     </td>
                 </tr>
 
@@ -43,14 +45,16 @@
                 </tr>
 
                 <tr>
-                    <td>Category: </td>
+                    <td>Category:</td>
                     <td>
                         <select name="category">
 
                             <?php
                                 //create php code to display category from DB
                                 //SQL HERE to active categories
-                                $sql = " SELECT * FROM tb_category WHERE active='Yes'";
+                                $sql = "SELECT * FROM tb_category WHERE active='Yes'";
+
+
 
                                 //execute query
                                 $res = mysqli_query($conn, $sql);
@@ -133,12 +137,12 @@
             $category = $_POST['category'];
             
             //if issett check radio button work or not
-            if(isset($_POST['feature']))
+            if(isset($_POST['featured']))
             {
-                $feature = $_POST['feature'];
+                $featured = $_POST['featured'];
             }
             else {
-                $feature = "No"; //default value
+                $featured = "No"; //default value
             }
 
             if(isset($_POST['active']))
@@ -157,7 +161,7 @@
                 $image_name = $_FILES['image']['name'];
 
                 //image check if not upload
-                if($image_name!="")
+                if($image_name!= "")
                 {
                     //image select
                     //rename image
@@ -204,18 +208,18 @@
 
             //SQL QUERY to SAVE OR ADD RECIPE
     //--------------------------------------VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV below here I have issue that is not connect to DB even $sql2 and sql
-   // $sql2 = "SELECT * FROM tb_recipe WHERE id='$id'";
+   // $sql2 = "SELECT * FROM tb_recipe WHERE id='$id'";          category = '$category',             feature ='$feature',
             $sql2 = "INSERT INTO tb_recipe SET               
                 title = '$title',
                 description = '$description',
                 image_name = '$image_name',
-                category = '$category',
-                feature ='$feature',
-                active ='$active'
+                category_id = '$category',
+                featured =   '$featured',
+                active =    '$active'
             ";
             
             //Execute query
-            $res2 = mysqli_query($conn,$sql);
+            $res2 = mysqli_query($conn, $sql2);
 
             //check data work here
             //redirect with message to manage-recipe.php

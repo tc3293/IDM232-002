@@ -16,6 +16,18 @@
                     echo $_SESSION['add'];
                     unset($_SESSION['add']);
                 }
+
+                if(isset($_SESSION['delete']))
+                {
+                    echo $_SESSION['delete'];
+                    unset($_SESSION['delete']);
+                }
+
+                if(isset($_SESSION['upload']))
+                {
+                    echo $_SESSION['upload'];
+                    unset($_SESSION['upload']);
+                }
         ?>
 
 
@@ -58,12 +70,12 @@
                     ?>
 
                     <tr>
+
                         <td><?php echo $list++; ?></td>
                         <td><?php echo $title; ?></td>
-                        <td><?php echo $image_name; ?></td>
 
                         <td>
-                            <?php 
+                        <?php 
                             //check image
                             if($image_name=="")
                             {
@@ -74,16 +86,18 @@
                             {
                                 //image found
                                 ?>
-                                <img src="<?php echo URL; ?>../images/<?php echo $image_name; ?>"width="200px">
+                                <img src="<?php echo URL; ?>images/<?php echo $image_name; ?>"width="130px">
                                 <?php
                             }
                             ?>
                         </td>
+                      
+                        </td>
                         <td><?php echo $featured; ?></td>
                         <td><?php echo $active; ?></td>
                         <td>
-                            <a href="#" class="btn-edit">Edit</a>
-                            <a href="#" class="btn-delete">Delete</a>
+                            <a href="<?php echo URL; ?>admin/edit-recipe.php?id=<?php echo $id;?>" class="btn-edit">Edit</a>
+                            <a href="<?php echo URL; ?>admin/delete-recipe.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-delete">Delete</a>
                         </td>
                     </tr>
                     
@@ -94,7 +108,7 @@
             else
             {   
                 //recipe fail to add
-                echo "<tr> <td colspan='7' class='error'> Food not Added Yet. </tr> </tr>";
+                echo "<tr> <td colspan='7' class='error'> Recipe not add. </td> </tr>";
             }
 
 

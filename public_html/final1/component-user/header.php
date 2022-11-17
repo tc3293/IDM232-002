@@ -26,10 +26,10 @@
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="categories.php">Category</a>
+                        <a href="category.php">Category</a>
                     </li>
                     <li>
-                        <a href="foods.php">Recipe</a>
+                        <a href="recipelist.php">Recipe</a>
                     </li>
                     <li>
                         <a href="../final1/admin/log-in.php">Log-In</a>
