@@ -1,4 +1,4 @@
-<?php include('../config/constants.php'); ?>
+
 
 <html>
     <head>
@@ -69,19 +69,20 @@
        if($count==1)
        {
         //available
-        $_SESSION['login'] = "<div class='win'> Log-in Sucess</div>";
+        $_SESSION['login'] = "<div class='win'> Log-in Success</div>";
         $_SESSION['user'] = $username; //check user logged out or in
 
 
         //redirect to index.php
-        header('location: http://localhost/final1/admin/index.php');    //header('location:' .URL. 'index.php/');
+        //header('location:'.URL.'/admin/index.php'); 
+        header('location: http://localhost:8888/final1/admin/index.php');    //header('location:' .URL. 'index.php/');
        }
      else
      {
     // not available or login in failed
     $_SESSION['login'] = "<div class='error center'> Account Not Match, try again.</div>";
     //redirect to index.php
-    header('location: http://localhost/final1/admin/log-in.php');
+    header('location: http://localhost:8888/final1/admin/log-in.php');
     }
 
 }

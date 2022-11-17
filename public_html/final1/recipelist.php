@@ -5,8 +5,8 @@
     <section class="food-search text-center">
         <div class="container">
             
-            <form action="food-search.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
+            <form action="food-search.php" method="POST">
+                <input type="search" name="search" placeholder="Search for Recipe " required>
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
 
@@ -33,7 +33,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">View Recipe</a>
+                    <a href="../final1/dorayaki-recipe.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">View Recipe</a>
+                    <a href="../final1/dorayaki-recipe.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">View Recipe</a>
+                    <a href="../final1/dorayaki.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
 
@@ -81,7 +81,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">View Recipe</a>
+                    <a href="../final1/dorayaki-recipe.php"" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
 
@@ -97,7 +97,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">View Recipe</a>
+                    <a href="../final1/dorayaki-recipe.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
 
@@ -113,7 +113,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">View Recipe</a>
+                    <a href="../final1/dorayaki-recipe.php" class="btn btn-primary">View Recipe</a>
                 </div>
             </div>
 

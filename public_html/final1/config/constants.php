@@ -4,9 +4,9 @@
 
     //constants to store non repeating values
 define('LOCALHOST', 'localhost');
-define('URL', '../');    //THIS IS URL FOR DELETEADMIN.PHP
+define('URL', '../');    //THIS IS URL FOR DELETEADMIN.PHP  //http://localhost:8888/final //    ../
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');    
 define('DB_NAME', 'food');  //food database because it is on xampp, I realize mamp and xammp are different -_-
 
 //You do this too $APP_CONFIG = [
@@ -19,7 +19,7 @@ define('DB_NAME', 'food');  //food database because it is on xampp, I realize ma
     //'database_name' => 'jun',
 //];
 
-    $conn = mysqli_connect('localhost', 'root','') or die(mysqli_error()); //database connection
+    $conn = mysqli_connect('localhost', 'root','root') or die(mysqli_error()); //database connection
     $db_select = mysqli_select_db($conn, 'food') or die(mysqli_error()); //selecting DB
 
 

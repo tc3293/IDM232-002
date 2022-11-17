@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: white;
+  color: rgb(0, 0, 0);
+}
+
+/*-----------------------------------------*Header---------------------------------------------*/
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  margin-left: 50px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.logo{
+  width: 250px;
+}
+
+
+/*--------------------------------DORAYAKI-------------------------------*/
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+}
+.sub-title {
+  margin-top: 10%;
+}
+.about-col-1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 5%;
+  width: 100%;
+  max-width: 400px;
+}
+
+.about-col-2 p{
+  margin-top: 20px;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: circle;
+  line-height: 1.6rem;
+}
+/*--------------------------------FOOTER BELOW-------------------------------*/
+.foot p{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/*-----------------------------------------css for small screens-----------------------------------*/
+nav .fas{
+  display: none;
+}
+@media only screen and (max-width: 768px){
+  nav .fas{
+      display: block;
+      font-size: 25px; 
+  }
+  nav ul{
+      background: #837e7e;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.4s;
+  }
+  nav ul li{
+      display: block;
+      margin: 25px;
+  }
+  nav ul .fas{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
+  .sub-title{
+      font-size: 25px;
+      text-align: center;
+  }
+  .about-col-1, .about-col-2{
+      flex-basis: 100%;
+  }
+  .about-col-1{
+      margin-bottom: 30px;
+  }
+  .about-col-2{
+      font-size: 16px;
+  }
+
+  p{
+      font-size: 14px;
+      margin:auto;
+  }
+}
