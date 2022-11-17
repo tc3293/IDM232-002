@@ -4,7 +4,7 @@
 if (!isset($page_title)) {
     $page_title = '🚨 Missing Title 🚨';
 }
-$site_title = 'JAWN Clips';
+$site_title = 'J-Wahashi';
 $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
 
 ?>
