@@ -1,46 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- Important to make website responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+<?php include('component-user/header.php')?>
 
-    <!-- Link our CSS file -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <!-- Navbar Section Starts Here -->
-    <section class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
-                </a>
-            </div>
-
-            <div class="menu text-right">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="categories.html">Categories</a>
-                    </li>
-                    <li>
-                        <a href="foods.html">Recipe</a>
-                    </li>
-                    <li>
-                        <a href="#">Log-In</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-    </section>
-    <!-- Navbar Section Ends Here -->
 
     <!-- fOOD sEARCH Section Starts Here -->
     <section class="food-search text-center">
@@ -64,13 +23,13 @@
 
             <div class="food-menu-box">
                 <div class="food-menu-img">
-                    <img src="images/dango.png" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    <img src="images/dango.png" alt="dango" class="img-responsive img-curve">
                 </div>
 
                 <div class="food-menu-desc">
                     <h4>Food Title</h4>
                     <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
+                        TEXT.
                     </p>
                     <br>
 
@@ -80,45 +39,13 @@
 
             <div class="food-menu-box">
                 <div class="food-menu-img">
-                    <img src="images/dango.png" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Smoky Burger</h4>
-                    <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
-                    </p>
-                    <br>
-
-                    <a href="#" class="btn btn-primary">View Recipe</a>
-                </div>
-            </div>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/dango.png" alt="Chicke Hawain Burger" class="img-responsive img-curve">
-                </div>
-
-                <div class="food-menu-desc">
-                    <h4>Nice Burger</h4>
-                    <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
-                    </p>
-                    <br>
-
-                    <a href="#" class="btn btn-primary">View Recipe</a>
-                </div>
-            </div>
-
-            <div class="food-menu-box">
-                <div class="food-menu-img">
-                    <img src="images/dango.png" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    <img src="images/dango.png" alt="dango" class="img-responsive img-curve">
                 </div>
 
                 <div class="food-menu-desc">
                     <h4>Food Title</h4>
                     <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
+                        TEXT.
                     </p>
                     <br>
 
@@ -128,13 +55,13 @@
 
             <div class="food-menu-box">
                 <div class="food-menu-img">
-                    <img src="images/dango.png" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    <img src="images/dango.png" alt="dango" class="img-responsive img-curve">
                 </div>
 
                 <div class="food-menu-desc">
                     <h4>Food Title</h4>
                     <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
+                        TEXT.
                     </p>
                     <br>
 
@@ -144,13 +71,45 @@
 
             <div class="food-menu-box">
                 <div class="food-menu-img">
-                    <img src="images/dango.png" alt="Chicke Hawain Momo" class="img-responsive img-curve">
+                    <img src="images/dango.png" alt="dango" class="img-responsive img-curve">
                 </div>
 
                 <div class="food-menu-desc">
-                    <h4>Chicken Steam Momo</h4>
+                    <h4>Food Title</h4>
                     <p class="food-detail">
-                        Made with Italian Sauce, Chicken, and organice vegetables.
+                        TEXT.
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/dango.png" alt="dango" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Food Title</h4>
+                    <p class="food-detail">
+                        TEXT.
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/dango.png" alt="dango" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Food Title</h4>
+                    <p class="food-detail">
+                       TEXT.
                     </p>
                     <br>
 
@@ -167,17 +126,7 @@
         </div>
 
     </section>
-    <!-- fOOD Menu Section Ends Here -->
 
 
 
-    <!-- footer Section Starts Here -->
-    <section class="footer">
-        <div class="container text-center">
-            <p>IDM232 @2022, Tony Chen</p>
-        </div>
-    </section>
-    <!-- footer Section Ends Here -->
-
-</body>
-</html>
+<?php include('component-user/footer.php')?>

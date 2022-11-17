@@ -110,7 +110,7 @@ table tr td{
     color: rgb(58, 55, 55);
 }
 
-/*CSS FOR MIDDLE CONTENT*/
+/*-------------CSS FOR MIDDLE CONTENT--------------------*/
 .main-content {
     
 }
@@ -118,5 +118,17 @@ table tr td{
 /*css for footer*/
 .footer{
     color: black;
+    text-align: center;
+}
+
+
+/*-------------------css DESIGN HERE for LOGIN-------------*/
+.log{
+    border: 2px solid gray;
+    width: 30%;
+    margin: 13% auto;
+    background-color: rgb(179, 174, 174);
+}
+.center {
     text-align: center;
 }

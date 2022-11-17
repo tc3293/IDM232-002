@@ -4,7 +4,16 @@
     <div class="main-content">
     <div class="wrapper">
         <h1>Setting Admin</h1>
+  <br><br>
         
+        <?php 
+    if(isset($_SESSION['login']))
+    {
+        echo $_SESSION['login'];
+        unset($_SESSION['login']);
+    }
+
+?>
         <br> <br> <br>
 
     
@@ -76,15 +85,19 @@
                         //display value in table
                         ?>
 <?php
-    $link_delete = "admin/deleteadmin.php";
+    $link_delete = "admin/deleteadmin.php";                   
+
+
+    /// href="<?php echo URL; edit-admin.php?id=<?php echo $id; " class="btn-edit">Edit</a>  <a href="<?php echo URL;deleteadmin.php?id=<?php echo $id; " class="btn-delete">Delete</a>  
 ?>
-                        <tr>
+                        <tr> 
                             <td><?php echo $list++; ?></td>
                             <td><?php echo $full_name; ?></td>
                             <td><?php echo $username; ?></td>
                             <td>
-                                <a href="<?php echo URL; ?>edit-admin.php?id=<?php echo $id; ?>" class="btn-edit">Edit</a>       <!--IMPORTANT BUTTON URL FOR SITE LINK -->
-                                <a href="<?php echo URL; ?>deleteadmin.php?id=<?php echo $id; ?>" class="btn-delete">Delete</a>  <!--IMPORTANT BUTTON URL FOR DELETE -->
+                                <a href="<?php echo URL;?>admin/edit-admin.php?id=<?php echo $id; ?>" class="btn-edit">Edit</a>       <!--IMPORTANT BUTTON URL FOR SITE LINK  DONT FORGOT admin/edit-admin.php! -->
+                                <a href="<?php echo URL;?>admin/deleteadmin.php?id=<?php echo $id; ?>" class="btn-delete">Delete</a>  <!--IMPORTANT BUTTON URL FOR DELETE -->
+                             
                             </td>
                         </tr>
 

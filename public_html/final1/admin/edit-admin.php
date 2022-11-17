@@ -35,7 +35,8 @@
             else 
             {
                 //redirect to index.php
-                header('location: http://localhost/final1/admin/index.php');
+                header('location:' .URL. 'admin/index.php/');
+                //header('location: http://localhost/final1/admin/index.php');
             }
 
 

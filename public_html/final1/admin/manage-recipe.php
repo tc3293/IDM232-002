@@ -6,46 +6,101 @@
 
         <br> <br> <br>
         <!---button ADD ADMIN--->
-        <a href="#" class="btn-primary">Add Recipe</a>
+        <a href="<?php echo URL; ?>admin/add-recipe.php" class="btn-primary">Add Recipe</a>
         <br> <br> <br>
+
+
+        <?php 
+                if(isset($_SESSION['add']))
+                {
+                    echo $_SESSION['add'];
+                    unset($_SESSION['add']);
+                }
+        ?>
+
 
         <table class=tbl-full>
             <tr> 
                 <th>List</th>
-                <th>Full_Name</th>
-                <th>Username</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>Feature</th>
+                <th>Active</th>
                 <th>Settings</th>
             </tr>
 
-            <tr>
-                <td>1)</td>
-                <td>Paul</td>
-                <td>Paul</td>
-                <td>
-                    <a href="#" class="btn-edit">Edit</a>
-                    <a href="#" class="btn-delete">Delete</a>
-                </td>
-            </tr>
+            <?php
+            //make SQL QUERY TO GET ALL recipe
+            $sql = "SELECT * FROM tb_recipe";
 
-            <tr>
-                <td>1)</td>
-                <td>Paul</td>
-                <td>Paul</td>
-                <td>
-                    <a href="#" class="btn-edit">Edit</a>
-                    <a href="#" class="btn-delete">Delete</a>
-                </td>
-            </tr>
+            //execute query
+            $res = mysqli_query($conn, $sql);
 
-            <tr>
-                <td>1)</td>
-                <td>Paul</td>
-                <td>Paul</td>
-                <td>
-                    <a href="#" class="btn-edit">Edit</a>
-                    <a href="#" class="btn-delete">Delete</a>
-                </td>
-            </tr>
+            //count Rows to checks whether we have foods or not
+            $count = mysqli_num_rows($res);
+
+                //serial num varable
+                $list=1;
+
+            
+            if($count>0)
+            {
+                //We have food in DB
+                //Get the foods from DB and Display
+                while($row = mysqli_fetch_assoc($res))
+                {
+                    //get values from individual colums
+                    $id = $row['id'];
+                    $title = $row['title'];
+                    $image_name = $row['image_name'];
+                    $featured = $row['featured'];
+                    $active = $row['active'];
+                    ?>
+
+                    <tr>
+                        <td><?php echo $list++; ?></td>
+                        <td><?php echo $title; ?></td>
+                        <td><?php echo $image_name; ?></td>
+
+                        <td>
+                            <?php 
+                            //check image
+                            if($image_name=="")
+                            {
+                                //we do not have image, display error message
+                                echo "<div class='error'>Not add.</div>";
+                            } 
+                            else
+                            {
+                                //image found
+                                ?>
+                                <img src="<?php echo URL; ?>../images/<?php echo $image_name; ?>"width="200px">
+                                <?php
+                            }
+                            ?>
+                        </td>
+                        <td><?php echo $featured; ?></td>
+                        <td><?php echo $active; ?></td>
+                        <td>
+                            <a href="#" class="btn-edit">Edit</a>
+                            <a href="#" class="btn-delete">Delete</a>
+                        </td>
+                    </tr>
+                    
+                    <?php
+                }
+            }
+
+            else
+            {   
+                //recipe fail to add
+                echo "<tr> <td colspan='7' class='error'> Food not Added Yet. </tr> </tr>";
+            }
+
+
+            ?>
+
+            
 
         </table>
     </div>
