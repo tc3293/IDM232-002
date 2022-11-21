@@ -1,8 +1,8 @@
-<nav>
-  <div>
+<nav class="menu">
+  <div class="menu">
     <div>
-      <ul>
-        <li>
+      <ul class="menu">
+        <li class ="menu">
           <a href="<?php echo site_url(); ?>/index.php">All Recipes</a>
         </li>
         <li>

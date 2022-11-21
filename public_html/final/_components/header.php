@@ -20,5 +20,8 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
   <title><?php echo $document_title ; ?></title>
 </head>
 
+
+
+
 <body>
   <!-- Main Content Begins -->

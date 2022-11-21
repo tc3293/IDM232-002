@@ -85,6 +85,7 @@ video {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 article,
 aside,
@@ -120,6 +121,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/*HEADER below start*/
 * {
   color: red;
+  margin: 0 0;
+    padding: 0 0;
+}
+
+.colorheader {
+font-size: 50px ;
+background-color: green;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+    list-style-type: none;
+    style: none;
+    line-height: 60px;
+    width: 20%;
+    float: center;
+    text-decoration: none;
+}
+
+.searchbar {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+
+/*Image start here*/
+.border-black{
+  width: 40em;
+  height: 30px;
+}
+
+.dora {
+  width: 80%;
+    margin: 0 auto;
+    padding: 1%;
 }
