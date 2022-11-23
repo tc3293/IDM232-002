@@ -13,11 +13,13 @@ $recipes = get_recipes();
         <h1 class="text-center text-white"><?php echo $title; ?></h1>
     </div>
 
+  <br> <br>
   <div class="mx-auto my-16 max-w-7xl px-4">
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="sm:flex sm:items-center">
         <div class="text-white">
-          <h1>Recipes</h1>
+          <h1>Recipes Settings</h1>
+          <br>
           <p>A list of all the recipes including their title, ingredients and steps</p>
           <?php
             // If error query param exist, show error message
@@ -26,12 +28,17 @@ $recipes = get_recipes();
               }
           ?>
         </div>
+        <br><br><br><br>
+
         <div>
         <button class="btn btn-primary">
           <a class="text-white" href="<?php echo site_url(); ?>/admin/recipes/create.php" style="text-decoration: none;">Create Recipe</a>
         </button>
         </div>
       </div>
+      
+      <br><br><br>
+
       <div class="mt-8 flex flex-col">
         <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">

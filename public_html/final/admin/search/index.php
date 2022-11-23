@@ -2,7 +2,9 @@
 include_once __DIR__ . '/../../app.php';
 $page_title = 'Services';
 include_once __DIR__ . '/../../_components/header.php';
+
 $recipes = get_recipes();
+include_once __DIR__ . '/../../_components/navbar.php';
 
 // Check if search exist in query
 if (isset($_GET['search'])) {
@@ -36,7 +38,7 @@ if ($results->num_rows > 0) {
         <?php
         // If no results, echo no results
         if (!$recipe_results) {
-            echo '<p>No results found</p>';
+            echo '<p>No results found, make sure type correct name</p>';
         }
 ?>
         <?php
