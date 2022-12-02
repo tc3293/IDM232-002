@@ -251,7 +251,7 @@ cursor: pointer;
   margin: 2%;
   border: 3px solid black;
   border-radius: 20px;
-  height: 400px;
+  height: 400px;   /*FIX THE BOX SIZE OF IMAGE HERE*/
 }
 .float-container {
   position: relative;
