@@ -3,8 +3,9 @@ include_once __DIR__ . '/../../app.php';
 $page_title = 'Home';
 include_once __DIR__ . '/../../_components/header.php';
 ?>
-<?php include_once __DIR__ . '/../../_components/navbar.php'; ?>
+<?php include_once __DIR__ . '/../../_components/adminabar.php'; ?>
 
+<br><br>
 <!-- <main class="main"> -->
     <div>
         <?php $title = 'Create A Recipes';?>
@@ -33,6 +34,10 @@ include_once __DIR__ . '/../../_components/header.php';
                             <div class="block">
                                 <label for="">Recipe Title</label>
                                 <input type="text" name="recipe_title">
+                            </div>
+                            <div class="block">
+                                <label for="">Images</label>
+                                <input type="text" name="image_path">
                             </div>
                             <div class="block">
                                 <label for="">Ingredients</label>

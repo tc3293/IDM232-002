@@ -3,11 +3,13 @@ if (!isset($recipes)) {
     echo '$recipes variable is not defined. Please check the code.';
 }
 ?>
+<div class="my-table">
 <table class="table text-white">
   <thead>
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Title</th>
+      <th scope="col">Images</th>
       <th scope="col">Ingredients</th>
       <th scope="col">Instructions</th>
       <th scope="col">
@@ -24,6 +26,7 @@ if (!isset($recipes)) {
           <tr>
             <td>{$recipe['id']}</td>
             <td>{$recipe['recipe_title']}</td>
+            <td><img src='{$site_url}{$recipe['image_path']}' alt=''></td>
             <td>{$recipe['ingredients']}</td>
             <td>{$recipe['instructions']}</td>
             <td>
@@ -35,3 +38,4 @@ if (!isset($recipes)) {
     ?>
   </tbody>
 </table>
+  </div>

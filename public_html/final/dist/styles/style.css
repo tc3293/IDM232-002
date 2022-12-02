@@ -161,14 +161,33 @@ table {
   margin-right: 40px;
   font-weight: bold;
   font-size: 20px;
-  
+}
+
+.view {
+  line-height: 60px;
+}
+.view ul{
+  color: white;
+}
+.view ul li{ /*THIS IS VIEW MORE BUTTON recipe*/
+    display: inline; 
+    padding: 1%;
+    font-weight: bold;
+    font-size: 30px;
+}
+.view ul li:hover{
+  border: 10 px solid green;
+  border-radius: 10px;
+}
+.view li{
+  text-align: center;
 }
 .menu ul li:hover{
   background-color:#747172;
   border-radius: 10px;
 }
 
-/* cass for navbar section admin and all recipes*/
+/* css for navbar section admin and all recipes*/
 /*.menu ul li{
     display: inline;
     padding: 1%;
@@ -232,6 +251,7 @@ cursor: pointer;
   margin: 2%;
   border: 3px solid black;
   border-radius: 20px;
+  height: 400px;
 }
 .float-container {
   position: relative;
@@ -241,24 +261,27 @@ cursor: pointer;
 }
 .img-curve {
   border-radius: 10px;
+  height: 85%;
 }
 .float-text {
-  position: absolute;
-  bottom: 50%;
-  left: 30%;
+ /* position: absolute; */
+ /* bottom: 50%; */
+  /*left: 30%;*/
   color: black;
   font-family: sans-serif;
   font-weight: bold;
   text-shadow: 2px 2px white;
   font-size: 30px;
+  text-align: center;
 }
 a{
   text-decoration: none;
 }
-.img-curve:hover{
-background-color: #6e6062;
+.img-curve:hover{ /*IMAGE OVER HERE TOICH TAIYAKI*/
+background: linear-gradient(#616161, rgb(196, 197, 196));
 filter: saturate(70%);
 }
+
 h3 {
   font-size: 1.5rem;
 }
@@ -384,9 +407,9 @@ h2{
   filter: saturate(70%);
   }
 .float-text { /*text font size*/
-  position: absolute;
   font-size: 30px;
   text-align: center;
+  
 }
 .text-inside:hover{
 background-color: #6e6062;
@@ -403,8 +426,22 @@ h3 {
 }
 }
 
+/*CSS FOR ADMIN EDIT RECIPE PAGE*/
+.block {
+  margin-left: 20px;
+}
+.btn-primary {
+
+}
 
 
-
+.my-table img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 100px;
+  border-color: red;
+}
 
 

@@ -4,7 +4,7 @@ $page_title = 'Services';
 include_once __DIR__ . '/../../_components/header.php';
 
 $recipes = get_recipes();
-include_once __DIR__ . '/../../_components/navbar.php';
+include_once __DIR__ . '/../../_components/adminabar.php';
 
 // Check if search exist in query
 if (isset($_GET['search'])) {
@@ -29,6 +29,7 @@ if ($results->num_rows > 0) {
 
 ?>
 
+<br><br><br><br>
 <div class="mx-auto my-16 max-w-7xl px-4">
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
