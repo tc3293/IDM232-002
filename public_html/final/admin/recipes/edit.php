@@ -40,25 +40,30 @@ if ($result->num_rows > 0) {
         <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
           <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
             <form action="<?php echo site_url(); ?>/_includes/process-edit-recipes.php" method="POST">
+
+            <br><br>
               <div class="block">
-                <label for="">Recipe Title</label>
-                <input type="text" name="recipe_title"
+                <label for="">Recipe Title</label> <pre></pre>
+                <input type="text" name="recipe_title" size="40" placeholder="Type your Recipe"
                   value="<?php echo $recipe['recipe_title']?>">
               </div>
-              <div class="block">
-                <label for="">Image</label>
-                <input type="text" name="image_path"
-                  value="<?php echo $recipe['image_path']?>">
+              <br>
+              <div class="block"> 
+                <label for="" >Image </label> <pre></pre>
+                <input type="text" name="image_path" size="40" placeholder="/dist/images/YOUR IMAGE HERE.png"
+                  value="<?php echo $recipe['image_path']?>" >
               </div>
+              <br>
               <div class=" block">
-                <label for="">Ingredients</label>
-                <textarea class="js-tinymce" type="text" name="ingredients"><?php echo $recipe['ingredients']?></textarea>
+                <label for="">Ingredients</label> <pre></pre>
+                <textarea class="js-tinymce" type="text" name="ingredients" id="" cols="50" rows="10" placeholder="Type your Ingredients"><?php echo $recipe['ingredients']?></textarea>
               </div>
+              <br>
               <div class=" block">
-                <label for="">Instructions</label>
-                <textarea class="js-tinymce" type="text" name="instructions"><?php echo $recipe['instructions']?></textarea>
+                <label for="">Instructions</label> <pre></pre>
+                <textarea class="js-tinymce" type="text" name="instructions" id="" cols="50" rows="10" placeholder="Type your Instructions"><?php echo $recipe['instructions']?></textarea>
               </div>
-              <input class="btn btn-primary" type="submit" value="Update Recipe">
+              <input class="bto bto-mary" type="submit" value="Update Recipe"> <!-- btn-primary-->
 
               <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
             </form>
@@ -69,5 +74,6 @@ if ($result->num_rows > 0) {
   </div>
 </div>
 
+<br><br>
 
 <?php include_once __DIR__ . '/../../_components/footer.php';

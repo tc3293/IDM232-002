@@ -8,7 +8,7 @@ include_once __DIR__ . '/../../_components/header.php';
 <br><br>
 <!-- <main class="main"> -->
     <div>
-        <?php $title = 'Create A Recipes';?>
+        <?php $title = 'Create Recipes';?>
         <h1><?php echo $title; ?></h1>
     </div>
 
@@ -23,7 +23,7 @@ include_once __DIR__ . '/../../_components/header.php';
         <div>
             <div>
                 <div>
-                    <h1>Create recipe</h1>
+                    <h1></h1>
                 </div>
             </div>
             <div>
@@ -31,23 +31,29 @@ include_once __DIR__ . '/../../_components/header.php';
                     <div>
                     <div>
                         <form action="<?php echo site_url(); ?>/_includes/process-create-recipes.php" method="POST">
+                        <br><br>
                             <div class="block">
-                                <label for="">Recipe Title</label>
-                                <input type="text" name="recipe_title">
+                                <label for="">Recipe Title</label> <pre></pre>
+                                <input type="text" name="recipe_title" size="40" placeholder="Type your Recipe">
                             </div>
+                            <br>
                             <div class="block">
-                                <label for="">Images</label>
-                                <input type="text" name="image_path">
+                                <label for="">Images</label> <pre></pre>
+                                <input type="text" name="image_path"  size="40" placeholder="/dist/images/IMAGE NAME HERE.png">
                             </div>
+                            <br>
                             <div class="block">
-                                <label for="">Ingredients</label>
-                                <textarea class="js-tinymce" name="ingredients" id="" cols="30" rows="10"></textarea>
+                                <label for="">Ingredients</label> <pre></pre>
+                                <textarea class="js-tinymce" name="ingredients" id="" cols="45" rows="10" placeholder="Type your Ingredients"></textarea>
                             </div>
+                            <br>
                             <div class="block">
-                                <label for="">Instructions</label>
-                                <textarea class="js-tinymce" name="instructions" id="" cols="30" rows="10"></textarea>
+                                <label for="">Instructions</label> <pre></pre>
+                                <textarea class="js-tinymce" name="instructions" id="" cols="45" rows="10" placeholder="Type your Instructions"></textarea>
                             </div>
-                            <input class="btn btn-primary" type="submit" value="submit">
+                            <br>
+                            <input class="bto bto-mary" type="submit" value="submit">
+                            
                         </form>
                     </div>
                     </div>
@@ -56,5 +62,6 @@ include_once __DIR__ . '/../../_components/header.php';
     </div>
     </div>
 
+    <br><br>
 <!-- </main> -->
 <?php include_once __DIR__ . '/../../_components/footer.php';

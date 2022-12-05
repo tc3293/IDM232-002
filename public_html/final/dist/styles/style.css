@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  background: radial-gradient(white, rgb(182, 178, 178));
 }
 ol,
 ul {
@@ -176,14 +177,14 @@ table {
     font-size: 30px;
 }
 .view ul li:hover{
-  border: 10 px solid green;
+  border: 10 px solid;
   border-radius: 10px;
 }
 .view li{
   text-align: center;
 }
 .menu ul li:hover{
-  background-color:#747172;
+  background-color:#a9a9a9;
   border-radius: 10px;
 }
 
@@ -234,8 +235,8 @@ color: white;
 cursor: pointer;
 }
 .btn-primary:hover{
-  color:white;
-  background-color: #6e6062;
+  color:black;
+  background-color: #a9a9a9;
 }
 
 /*INDEX PAGE RECIPE LIST GRID/BOX HERE*/
@@ -424,16 +425,42 @@ h3 {
   font-weight: bold;
   font-size: 30px;
 }
+.block {
+  text-align: center;
+  margin-left: none;
+}
 }
 
 /*CSS FOR ADMIN EDIT RECIPE PAGE*/
 .block {
-  margin-left: 20px;
-}
-.btn-primary {
+  margin-left: 15px;
 
 }
+.bto-mary {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
 
+.bto { /*CSS TO DESIGN THE SUBMIT BUTTON FROM EDIT AND CREATE*/
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-left: 30px;
+
+}
+.js-tinymce{ /*CSS THE TEXTAREA DESIGN HERE*/
+  width: 90%;
+  height: 250px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
 
 .my-table img {
   width: 50px;
@@ -444,4 +471,7 @@ h3 {
   border-color: red;
 }
 
-
+/*CSS THE EDIT AND DELETE HOVER*/
+tbody td a{
+  margin: 5px
+}

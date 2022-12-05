@@ -14,7 +14,7 @@ $recipes = get_recipes();
 <main class="main">
     <div>
         <?php $title = 'Admin';?>
-        <h1 class="text-center text-white"><?php echo $title; ?></h1>
+        <h1 class="text-center text-black"><?php echo $title; ?></h1>
     </div>
 
   <br> <br>

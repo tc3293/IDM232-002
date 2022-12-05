@@ -11,7 +11,7 @@ $recipes = get_recipes();
 ?>
 <?php
     // get recipes data from database
-    $query = 'SELECT * FROM recipes LIMIT 6';
+    $query = 'SELECT * FROM recipes LIMIT 6'; //fix out how to do limit php on home page, need help
     $result = mysqli_query($db_connection, $query);
 ?>
 
