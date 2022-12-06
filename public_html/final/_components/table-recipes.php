@@ -10,8 +10,6 @@ if (!isset($recipes)) {
       <th scope="col">ID</th>
       <th scope="col">Title</th>
       <th scope="col">Images</th>
-      <th scope="col">Ingredients</th>
-      <th scope="col">Instructions</th>
       <th scope="col">
         <span class="sr-only">Setting</span>
       </th>
@@ -27,8 +25,7 @@ if (!isset($recipes)) {
             <td>{$recipe['id']}</td>
             <td>{$recipe['recipe_title']}</td>
             <td><img src='{$site_url}{$recipe['image_path']}' alt=''></td>
-            <td>{$recipe['ingredients']}</td>
-            <td>{$recipe['instructions']}</td>
+            
             <td>
               <a href='{$site_url}/admin/recipes/edit.php?id={$recipe['id']}'>Edit</a>
               <a href='{$site_url}/admin/recipes/delete.php?id={$recipe['id']}'>Delete</a>

@@ -8,7 +8,7 @@ if (!isset($recipes)) {
     $site_url = site_url();
     while ($recipe = mysqli_fetch_array($recipes)) {
         echo "
-        <a class='box-recipes-link' href='{$site_url}/recipes-detail.php?id={$recipe['id']}'>
+        <a class='box-recipes-link' href='{$site_url}/recipe-detail.php?id={$recipe['id']}'>
             <div class='box-3 float-container'>
                 
                     

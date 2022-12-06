@@ -48,8 +48,8 @@ include_once __DIR__ . '/../../_components/header.php';
                             </div>
                             <br>
                             <div class="block">
-                                <label for="">Instructions</label> <pre></pre>
-                                <textarea class="js-tinymce" name="instructions" id="" cols="45" rows="10" placeholder="Type your Instructions"></textarea>
+                                <label for="">Instructions</label>
+                                <textarea class="js-tinymce" name="instructions" id="" cols="30" rows="10"></textarea>
                             </div>
                             <br>
                             <input class="bto bto-mary" type="submit" value="submit">

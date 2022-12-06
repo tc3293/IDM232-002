@@ -17,6 +17,9 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/jicon.png">
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/style.css">
+  <!-- Including TinyMCE Library -->
+  <script src="https://cdn.tiny.cloud/1/7rpnj47it93x8jhvzo8vbgdulo0j4qdj5xdmud6xc46gy8fb/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
   <title><?php echo $document_title ; ?></title>
 </head>
 
