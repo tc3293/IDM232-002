@@ -252,18 +252,69 @@ cursor: pointer;
   margin: 2%;
   border: 3px solid black;
   border-radius: 20px;
-  height: 400px;   /*FIX THE BOX SIZE OF IMAGE HERE*/
+  height: 555px;   /*FIX THE BOX SIZE OF IMAGE HERE*/
 }
 .float-container {
   position: relative;
 }
 .img-resp{
   width: 100%;
+  height: 365px;
+  object-fit: cover;
+  object-position: bottom;
 }
 .img-curve {
   border-radius: 10px;
-  height: 85%;
+  height: 420px;
+  object-fit: cover;
+  object-position: bottom;
 }
+
+/*-------------------------------IMPORTANT grip/grid image-----------------------------------*/
+/*CSS THE SEARCH INDEX HERE AS WELL MOBILE*/
+
+.box-image-text {
+    width: 28%;
+    float: left;
+    margin: 2%;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 400px;
+    padding-bottom: 5rem;
+}
+
+.my-images {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  padding-bottom: 0rem;
+}
+
+.box-image-text:hover {
+  background: linear-gradient(#616161, rgb(196, 197, 196));
+filter: saturate(70%);
+}
+
+
+@media only screen and (max-width:768px){
+  .box-image-text{
+  height: 430px;
+  position: relative;
+  align-items: center;
+  width: 23rem;
+  object-fit: cover;
+  object-position: bottom;
+  padding-bottom: 7rem;
+  
+  }
+
+}
+/*------------------------------------------------------------------------------------*/
+
 .float-text {
  /* position: absolute; */
  /* bottom: 50%; */
@@ -431,6 +482,32 @@ h3 {
   text-align: center;
   margin-left: none;
 }
+.bg-white{ /*CSS MOBILE FOOTER*/
+  width: 28%;
+  float: center;
+  margin: 34.5%;
+}
+.recipe-detail-image { /*CSS TO SHRINK THE IMAGE MOBILE*/
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+  
+}
+}
+
+.picture {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+
+.bg-white{  /*CSS FOOTER*/
+    float: center;
+    margin-top: 5rem;
+    
 }
 
 /*CSS FOR ADMIN EDIT RECIPE PAGE*/
@@ -476,4 +553,30 @@ h3 {
 /*CSS THE EDIT AND DELETE HOVER*/
 tbody td a{
   margin: 5px
+}
+
+/*CSS RECIPE DETAIL IMAGE CSS*/
+
+.recipe-detail-image {
+  display: flex;
+  justify-content: center;
+}
+
+/*CSS THE COVER IMAGE HERE FOR INDEX HOME PAGE USER.*/
+.script-1{
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width:768px){
+.script-1 {
+  width: 0%;
+  height: 290px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 }

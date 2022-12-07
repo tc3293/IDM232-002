@@ -4,13 +4,24 @@
  * get all recipes from the database
  * @return object - mysqli_result
  */
+
 function get_recipes()
+
 {
     global $db_connection;
     $query = 'SELECT * FROM recipes';
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
+////GET ALPHABETICAL ORDER RECIPE CODE HERE
+
+
+
+
+
+
+
+
 
 /**
  * Insert a recipe into the database

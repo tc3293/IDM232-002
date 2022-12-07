@@ -6,10 +6,10 @@ if (!isset($recipes)) {
        
 <?php
     $site_url = site_url();
-    while ($recipe = mysqli_fetch_array($recipes)) {
+    while ($recipe = mysqli_fetch_array($recipes)) /*This is LOOP over recipe*/{
         echo "
         <a class='box-recipes-link' href='{$site_url}/recipe-detail.php?id={$recipe['id']}'>
-            <div class='box-3 float-container'>
+            <div class='box-image-text float-container'>
                 
                     
                         <img class='img-resp img-curve' src='{$site_url}/{$recipe['image_path']}'>

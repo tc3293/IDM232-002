@@ -55,8 +55,29 @@ if ($results->num_rows > 0) {
       if ($recipe_results) {
           while ($recipe_results = mysqli_fetch_assoc($results)) {
               echo '<div class="flex flex-row justify-center items-center">';
-              echo '<h2>' . $recipe_results['recipe_title'] .  '</h2>';
-            //   echo '<h2>' . $recipe_results['recipe_title'] . ' ' . $recipe_results['image'] . '</h2>';
+              echo 
+              
+              
+              '<div class="small-box-recipes">' 
+              
+              
+
+              . '<a class="box-recipes-link" href="' . site_url() . '/recipe-detail.php?id=' . $recipe_results['id'] . '">'
+              
+              . '<div class="box-image-text">'
+
+              . '<img src="' . site_url() . $recipe_results['image_path'] . '" class="my-images" alt="...">'
+
+              . '<h4 class="text-center">' . $recipe_results['recipe_title'] . 
+              
+              '</h4>' . 
+
+              '</div>' .
+
+              '</a>' .
+              
+              '</div>';
+              // echo '<h2>' . $recipes_results['recipe_title'] . ' ' . $recipes_results['ingredients'] . ' ' . $recipes_results['steps'] . '</h2>';
               echo '</div>';
           }
       }
