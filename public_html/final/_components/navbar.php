@@ -1,8 +1,8 @@
 <nav>
   <div class="cointainer">
     <div class="logo">
-      <a href="/idm232/final/index.php" title="logo"> <!--click J-Wahashi to homepage--->
-        <img src = "images/j.png" alt="J-Watashi" class="img-responsive"> . <!--../../images/j.png logo work for admin. how to fix it.--->
+      <a href="/idm232/final/index.php" title="logo"> <!-- click J-Wahashi to homepage -->
+        <img src = "images/j.png" alt="J-Watashi" class="img-responsive"> . <!-- ../../images/j.png logo work for admin. how to fix it. -->
       </a>
     </div>
     <div class="menu text-right">

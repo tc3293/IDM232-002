@@ -17,14 +17,18 @@ include_once __DIR__ . '/_components/header.php';
 ?>
 
 <br><br><br>
-<section id="example" class="container-case container">
-    <div class="script-1">
-                <img src="/final/dist/images/cover.png">
-
-        </div>
-</section>
+<div class="home-bg">
+    <section class="home">
+    <div class="content">
+        <span></span>
+        <h3>Asian Food Recipe</h3>
+        <p>Click below to see our most popular recipe and
+            complete list of recipes!
+        </p>
+        <a href="recipelist.php" class="butter"> View Recipe</a>
+    </div>
+  </section>
 </div>
-
 
 <br> <br><br>
 
@@ -36,11 +40,6 @@ include_once __DIR__ . '/_components/header.php';
 
 <?php include __DIR__ . '/_components/recipe_card.php'; ?>
 
- 
-
-
- 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br>
-<br>
+</div>
+</div>
 <?php include_once __DIR__ . '/_components/footer.php'; ?>

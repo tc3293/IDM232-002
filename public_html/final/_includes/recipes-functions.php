@@ -34,10 +34,11 @@ function get_recipes()
 function add_recipe($recipe_title, $image_path, $ingredients, $instructions)
 {
     global $db_connection;
-    $query = 'INSERT INTO recipes';
+    $query = 'INSERT INTO recipes' ;
     $query .= ' (recipe_title, image_path, ingredients, instructions)';
     $query .= " VALUES ('$recipe_title', '$image_path', '$ingredients', '$instructions')";
-
+ 
+    
     $result = mysqli_query($db_connection, $query);
     return $result;
 }

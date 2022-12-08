@@ -484,7 +484,7 @@ h3 {
 }
 .bg-white{ /*CSS MOBILE FOOTER*/
   width: 28%;
-  float: center;
+  float: left;
   margin: 34.5%;
 }
 .recipe-detail-image { /*CSS TO SHRINK THE IMAGE MOBILE*/
@@ -505,8 +505,9 @@ h3 {
 
 
 .bg-white{  /*CSS FOOTER*/
-    float: center;
-    margin-top: 5rem;
+    float: left;
+    margin-top: 7rem;
+    margin-left: 40%;
     
 }
 
@@ -563,20 +564,67 @@ tbody td a{
 }
 
 /*CSS THE COVER IMAGE HERE FOR INDEX HOME PAGE USER.*/
-.script-1{
+.home-bg{
+  background: url(../images/cover00.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-bg .home{
   display: flex;
-  justify-content: center;
-  height: 20%;
+  align-items: center;
+  min-height: 60vh;
+}
+.home-bg .home .content {
+  width: 50rem;
+  margin-left: 20px;
+}
+
+.home-bg .home .content h3{
+  color:var(--black);
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  text-shadow: 3.5px 3.5px 0px rgb(162, 158, 158);
+  color: rgb(28, 26, 26);
+ 
+}
+.home-bg .home .content p{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: rgb(32, 30, 30);
+  text-align: left;
+  text-shadow: 3px 3px 15px rgb(122, 120, 120);
+}
+.home-bg .home .content a{
+  display: inline-block;
+  width: auto;
+}
+.butter {
+  display: block;
   width: 100%;
-  object-fit: cover;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.butter {
+  background-color: rgb(100, 114, 100);
+}
+.butter:hover {
+  background-color: black;
 }
 
 @media only screen and (max-width:768px){
-.script-1 {
-  width: 0%;
-  height: 290px;
-  object-fit: cover;
-  object-position: bottom;
+.home-bg{
+  background-position: left;
 }
 
+  .home-bg .home {
+  justify-content: center;
+  text-align: center;
+}
 }

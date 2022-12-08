@@ -39,7 +39,7 @@ include_once __DIR__ . '/../../_components/header.php';
                             <br>
                             <div class="block">
                                 <label for="">Images</label> <pre></pre>
-                                <input type="text" name="image_path"  size="40" placeholder="/dist/images/IMAGE NAME HERE.png">
+                                <input type="text" name="image_path"  size="40" placeholder="/dist/images/1.png (type number from 1-43)">
                             </div>
                             <br>
                             <div class="block">

@@ -50,7 +50,7 @@ if ($result->num_rows > 0) {
               <br>
               <div class="block"> 
                 <label for="" >Image </label> <pre></pre>
-                <input type="text" name="image_path" size="40" placeholder="/dist/images/YOUR IMAGE HERE.png"
+                <input type="text" name="image_path" size="40" placeholder="/dist/images/1.png (type number from 1-43)"
                   value="<?php echo $recipe['image_path']?>" >
               </div>
               <br>
